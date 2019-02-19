@@ -12,5 +12,8 @@ services:
 
   web:
     image: dockersamples/k8s-wordsmith-web
+    command: >
+        bash -c "x=10
+        && echo x = $x"
     ports:
      - "8080:80"
